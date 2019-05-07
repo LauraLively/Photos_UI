@@ -10,7 +10,8 @@ import EditModal from '../Forms/EditModal';
 import DeleteModal from '../Forms/DeleteModal';
 
 const Imagesize = styled.img`
-  width: 20vw;
+  max-width: 20vw;
+  max-height: 200px;
 `;
 
 const ModalImg = styled.img`
@@ -22,7 +23,6 @@ const Container = styled.div`
   display: flex;
   margin: 1rem;
   flex-direction: wrap;
-
 `;
 
 const UpdateButtons = styled.div`
