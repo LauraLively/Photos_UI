@@ -41,10 +41,15 @@ export default class EditModal extends React.Component {
     this.setState({ open: false });
   };
 
+  // handleToggle = () => {
+  //   this.setState({ open: !open });
+  // };
+
   handleChange = (event) => {
+    // React synthetic events
     this.setState({
-    [event.target.name]: event.target.value
-  })
+      [event.target.name]: event.target.value
+    });
   };
 
   handleDateChange = async (date) => {

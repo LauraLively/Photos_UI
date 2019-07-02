@@ -75,7 +75,9 @@ export class SinglePhoto extends Component {
   )
 
   //need delete function here
-
+  toggleHandleOpen = () => {
+    this.setState({open : !this.state.open})
+  }
   handleClickOpen = () => {
     this.setState({ open: true });
   };

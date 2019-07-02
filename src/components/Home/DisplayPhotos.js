@@ -37,6 +37,7 @@ class DisplayPhotos extends Component {
       .then(components => this.setState({ photo: components }))
       .catch(err => console.log(err))
   };
+  
   componentDidMount() {
     this.getPhotos()
   };
